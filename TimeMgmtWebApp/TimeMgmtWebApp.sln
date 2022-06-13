@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeMgmtWebApp", "TimeMgmtWebApp.csproj", "{C05EE5EA-2A03-40FC-A439-A6C6663DD0DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeMgmtLibraryCore", "..\TimeMgmtLibraryCore\TimeMgmtLibraryCore.csproj", "{AB8F85C6-AD84-4568-9FF0-3017B635497D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C05EE5EA-2A03-40FC-A439-A6C6663DD0DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C05EE5EA-2A03-40FC-A439-A6C6663DD0DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C05EE5EA-2A03-40FC-A439-A6C6663DD0DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C05EE5EA-2A03-40FC-A439-A6C6663DD0DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB8F85C6-AD84-4568-9FF0-3017B635497D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB8F85C6-AD84-4568-9FF0-3017B635497D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB8F85C6-AD84-4568-9FF0-3017B635497D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB8F85C6-AD84-4568-9FF0-3017B635497D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35A93F27-1E0F-45A0-B874-0BDF6848D7BB}
+	EndGlobalSection
+EndGlobal

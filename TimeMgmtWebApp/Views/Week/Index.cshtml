@@ -1,0 +1,37 @@
+﻿@model IEnumerable<TimeMgmtLibraryCore.Models.UserModule>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (@TimeMgmtLibraryCore.DataAccess.WeekDAL.GetUserModuleReminder().ModuleCode != null)
+{
+    <div class="alert alert-info alert-dismissible fade show text-center" role="alert">
+        <strong>@TimeMgmtLibraryCore.DataAccess.WeekDAL.GetUserModuleReminder().ModuleCode</strong> Scheduled For Today!
+        <button type="button" class="btn btn-outline-info" data-dismiss="alert" aria-label="Close">X</button>
+    </div>
+}
+
+<h1 class="text-center">My Week</h1>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Module Code</th>
+            <th>Self-study Hours Left</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var module in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => module.ModuleCode)</td>
+                <td>@Html.DisplayFor(modelItem => module.SelfStudyHrsLeft)</td>
+                <td>
+                    <a asp-action="Record" asp-route-id="@module.ModuleCode" class="btn btn-primary">Record</a>
+                    <a asp-action="Reminder" asp-route-id="@module.ModuleCode" class="btn btn-info">Set Reminder</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

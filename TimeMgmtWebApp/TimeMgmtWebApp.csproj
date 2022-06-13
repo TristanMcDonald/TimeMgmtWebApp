@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+    <StartupObject>TimeMgmtWebApp.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Chart.js" Version="2.9.3" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.12" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\TimeMgmtLibrary\TimeMgmtLibrary\bin\Debug\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\TimeMgmtLibrary\TimeMgmtLibrary\bin\Debug\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\TimeMgmtLibrary\TimeMgmtLibrary\bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\TimeMgmtLibrary\TimeMgmtLibrary\bin\Debug\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Cryptography.Internal">
+      <HintPath>..\TimeMgmtLibrary\TimeMgmtLibrary\bin\Debug\Microsoft.AspNetCore.Cryptography.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation">
+      <HintPath>..\TimeMgmtLibrary\TimeMgmtLibrary\bin\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>..\TimeMgmtLibrary\TimeMgmtLibrary\bin\Debug\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlClient">
+      <HintPath>..\TimeMgmtLibrary\TimeMgmtLibrary\bin\Debug\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.AccessControl">
+      <HintPath>..\TimeMgmtLibrary\TimeMgmtLibrary\bin\Debug\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions">
+      <HintPath>..\TimeMgmtLibrary\TimeMgmtLibrary\bin\Debug\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="TimeMgmtLibraryCore">
+      <HintPath>..\TimeMgmtLibraryCore\bin\Debug\net5.0\TimeMgmtLibraryCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

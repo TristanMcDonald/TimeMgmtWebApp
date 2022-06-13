@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Error";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container" style="position:absolute; top:20%">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center" style="color:red">Invalid Module Code</h2>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img style="max-width:50px;max-height:50px" src="~/lib/Images/warning.png" />
+                    </div>
+                    <div>
+                        <p class="text-danger" style="text-align: center; font-size:large; font-weight:bold">The Module Code that</p>
+                        <p class="text-danger" style="text-align: center; font-size: large; font-weight: bold ">you have entered</p>
+                        <p class="text-danger" style="text-align: center; font-size: large; font-weight: bold ">does not exist</p>
+                    </div>
+                    <div class="text-center" style="position:center">
+                        <a asp-action="Record" class="btn btn-primary">Return</a>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </div>
+</div>

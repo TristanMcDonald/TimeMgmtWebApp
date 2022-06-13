@@ -1,0 +1,28 @@
+﻿@model TimeMgmtLibraryCore.Models.SemesterModel 
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1 class="text-center">My Semester</h1>
+<div class="container">
+    <div class="row align-items-start">
+        <div class="col text-center">
+            <a asp-action="Create" class="btn btn-primary btn-lg text-center">New Semester</a>
+        </div>
+    </div>
+    <div class="row align-items-end">
+        <div class="col text-center">
+            <label asp-for="StartDate" class="control-label text-center">Semester Start Date</label>
+            <input asp-for="StartDate" class="form-control form-control-lg text-center" type="text" placeholder="No Semester Start Date" readonly>
+        </div>
+        <div class="col text-center">
+            <label asp-for="NumOfWeeks" class="control-label text-center">Number of Weeks</label>
+            <input asp-for="NumOfWeeks" class="form-control form-control-lg text-center" type="text" placeholder="0" readonly>
+        </div>
+        <div class="col text-center">
+            <label asp-for="EndDate" class="control-label text-center">Semester End Date</label>
+            <input asp-for="EndDate" class="form-control form-control-lg text-center" type="text" placeholder="No Semester End Date" readonly>
+        </div>
+    </div>
+</div>
